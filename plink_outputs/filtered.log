@@ -1,0 +1,25 @@
+PLINK v2.00a3.3LM 64-bit Intel (3 Jun 2022)
+Options in effect:
+  --bfile plink_outputs/filter
+  --exclude plink_outputs/filter.prune.out
+  --make-bed
+  --out plink_outputs/filtered
+
+Hostname: igor2-Nitro-AN515-52
+Working directory: /media/igor2/Seagate Expansion Drive/1000_GENOMES/to_compress
+Start time: Wed Jul 13 21:07:37 2022
+
+Random number seed: 1657757257
+15843 MiB RAM detected; reserving 7921 MiB for main workspace.
+Using up to 8 compute threads.
+107 samples (0 females, 0 males, 107 ambiguous; 107 founders) loaded from
+plink_outputs/filter.fam.
+1055454 variants loaded from plink_outputs/filter.bim.
+Note: No phenotype data present.
+--exclude: 124092 variants remaining.
+124092 variants remaining after main filters.
+Writing plink_outputs/filtered.fam ... done.
+Writing plink_outputs/filtered.bim ... done.
+Writing plink_outputs/filtered.bed ... done.
+
+End time: Wed Jul 13 21:07:37 2022

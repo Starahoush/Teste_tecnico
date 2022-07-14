@@ -1,0 +1,47 @@
+PLINK v2.00a3.3LM 64-bit Intel (3 Jun 2022)
+Options in effect:
+  --geno
+  --indep-pairwise 50 10 0.5
+  --keep files/TSI_individuals.txt
+  --make-bed
+  --max-alleles 2
+  --mind
+  --out plink_outputs/filter
+  --rm-dup
+  --set-all-var-ids @:#$r-$a
+  --snps-only just-acgt
+  --vcf files/chr22.vcf.gz
+
+Hostname: igor2-Nitro-AN515-52
+Working directory: /media/igor2/Seagate Expansion Drive/1000_GENOMES/to_compress
+Start time: Wed Jul 13 21:07:19 2022
+
+Random number seed: 1657757239
+15843 MiB RAM detected; reserving 7921 MiB for main workspace.
+Using up to 8 compute threads.
+--vcf: 1103547 variants scanned.
+--vcf: plink_outputs/filter-temporary.pgen +
+plink_outputs/filter-temporary.pvar.zst + plink_outputs/filter-temporary.psam
+written.
+2504 samples (0 females, 0 males, 2504 ambiguous; 2504 founders) loaded from
+plink_outputs/filter-temporary.psam.
+1055454 out of 1103547 variants loaded from
+plink_outputs/filter-temporary.pvar.zst.
+Note: No phenotype data present.
+Note: Skipping --rm-dup since no duplicate IDs are present.
+--keep: 107 samples remaining.
+Calculating sample missingness rates... done.
+0 samples removed due to missing genotype data (--mind).
+107 samples (0 females, 0 males, 107 ambiguous; 107 founders) remaining after
+main filters.
+Calculating allele frequencies... done.
+--geno: 0 variants removed due to missing genotype data.
+1055454 variants remaining after main filters.
+Writing plink_outputs/filter.fam ... done.
+Writing plink_outputs/filter.bim ... done.
+Writing plink_outputs/filter.bed ... done.
+--indep-pairwise (1 compute thread): 931362/1055454 variants removed.
+Variant lists written to plink_outputs/filter.prune.in and
+plink_outputs/filter.prune.out .
+
+End time: Wed Jul 13 21:07:37 2022

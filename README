@@ -1,0 +1,13 @@
+Número de amostras e SNP após cada etapa de filtragem:
+-População italiana: 107/2504 amostras (--keep TSI_individuals.txt)
+-variantes bialélicas: 1097199/1103547 variantes (--max-alleles 2)
+-Apenas SNPs e ATCG: 1055454/1097199 variantes (--snps-only just-acgt)
+-Faltantes e duplicatas: Nada removido (--geno --mind --rm-dup)
+-Desequilíbrio de ligação de 50 kb de janela, step de 10 e r2 de 0.5: 124092/1055454 variantes restantes (--indep-pairwise 50 10 0.5)
+
+Abaixo está a descrição das pastas enviadas:
+whole_analysis.sh: script bash utilizado para acquisição e processamento dos dados 
+'files': Pasta de destino para os dados baixados; para manter, comentar linhas 33-36
+'plink_outputs': Pasta de destino para as saídas do 'plink'; alguns arquivos foram removidos
+'individuals': Pasta contendo pastas com arquivos 1) .csv.gz para cada amostra do arquivo .fam, 2) .logs, 3) o arquivo .23andme gerado pelo comando --recode 23 pode ser mantido ao comentar a linha 28, bem como o arquivo .nosex que se repete em todas as pastas, ao comentar a linha 23; há também uma pasta 'temp_files' com arquivos temporários utilizados para gerar as pastas
+'jupyter_notebook': Pasta contendo os arquivos .ipynb e os arquivos de saída 'densityplot.png' e 'allele_freq.txt'
